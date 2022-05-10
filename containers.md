@@ -16,14 +16,14 @@ Unfortunately there are also some disadvantages:
 - We will need to build, distribute and maintain the containers
   (in addition to the RPM packages)
 - It's a question whether all management tasks can be done from a container,
-  maybe for some tasks we might need a dedicates service or special support
+  maybe for some tasks we might need a dedicated service or special support
   in the host system
 
 ## New Problems
 
 There are also some completely new problems, specific to the containers environment.
 
-In the current SLE we might be pretty sure that in e.g. in SLE-15-SP3 you use the
+In the current SLE we might be pretty sure that for example in SLE-15-SP3 you use the
 SLE-15-SP3 YaST to manage the system. So the YaST expectations about the system
 (like file locations, file formats, package names, etc...) match the managed
 system.
