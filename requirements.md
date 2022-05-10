@@ -1,5 +1,20 @@
 # Requisites: 1:1 Management Tool(s) for ALP Host OS
 
+## Some Notes About this Document
+
+This document is a work in progress, sections marked as "TO BE WRITTEN" are expected to be expanded
+but any feedback is already welcome.
+
+A label like **PRIO-1** specifies the priority of the given requisite or use case, which would go
+from:
+
+* PRIO-0: absolutely crucial
+* PRIO-5: irrelevant, to be removed from subsequent versions of the document
+
+Labels as **PRIO-?** or **please describe** are explicit calls for feedback from the ALP architects.
+Priorities are useful even for features that are not fully described yet ("TO BE WRITTEN"), to
+decide whether it makes sense to even take the time to describe the feature.
+
 ## General considerations
 
 The tool(s) should enable easy and convenient management of a so-called pet system (as opposed to
