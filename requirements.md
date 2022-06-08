@@ -107,15 +107,15 @@ production systems) from a 1:many management framework.
 **NOTE:** these requirements should be qualified and validated by the ALP architects, adding
 new ones if needed. Then they should be rated according to its priority.
 
-**PRIO-0** There should be a minimum impact on the size of ALP Host OS, both in terms of bytes and of
+**PRIO-?** There should be a minimum impact on the size of ALP Host OS, both in terms of bytes and of
 components that would need to be included in such a base system. If possible, all components of the
 1:1 management solution should run as optional containers on top of the Host OS.
 
-**PRIO-1** Should have (virtually) zero CPU and memory footprint if not used.
+**PRIO-?** Should have (virtually) zero CPU and memory footprint if not used.
 
-**PRIO-3** Should have small CPU and memory footprint when in use.
+**PRIO-?** Should have small CPU and memory footprint when in use.
 
-**PRIO-4** Should have a reasonable disk footprint when installed/deployed as container(s).
+**PRIO-?** Should have a reasonable disk footprint when installed/deployed as container(s).
 
 **PRIO-?** The actions of the tool should be accountable, so it's possible to inspect the changes
 and internal decisions done while configuring a test system in order to generalize and translate
