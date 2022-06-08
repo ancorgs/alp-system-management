@@ -1,6 +1,23 @@
 # Using Containers for System Management
 
-## Advantages
+## Current Status
+
+Running `cockpit-bridge` and the Cockpit extensions inside a container is discarded for the mid-term:
+
+- Cockpit architecture makes it hard.
+- It's not a priority for upstream Cockpit.
+- The main Cockpit dependency is Python, which is acceptable in the ALP Host OS since other
+  components also need it.
+
+Running YaST in a container is completely possible. This [shell
+script](https://github.com/lslezak/yast-container) is able to execute any YaST module (even the YaST
+Control Center) inside a container to manage the host system. It can be used in text mode, in
+graphical mode and even with browser-based access. Some YaST modules already run out-of-the-box and
+others are being adapted.
+
+## Rationale
+
+### Advantages
 
 Having a system management in a separate container has several advantages:
 
@@ -8,7 +25,7 @@ Having a system management in a separate container has several advantages:
 - The management container might be installed only when needed and can be later
   removed when not needed anymore
 
-## Disadvantages
+### Disadvantages
 
 Unfortunately there are also some disadvantages:
 
@@ -19,7 +36,7 @@ Unfortunately there are also some disadvantages:
   maybe for some tasks we might need a dedicated service or special support
   in the host system
 
-## New Problems
+### New Problems
 
 There are also some completely new problems, specific to the containers environment.
 
