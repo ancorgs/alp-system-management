@@ -7,7 +7,7 @@ actually the combination of two solutions.
 
 * The main 1:1 system management tool should be Cockpit. Since running the main components
 of Cockpit (`cockpit-bridge` and the Cockpit extensions) inside a container is not feasible in the
-mid term, I would be necessary to install Cockpit into the system to make use of it. The packaged
+mid term, it would be necessary to install Cockpit into the system to make use of it. The packaged
 Cockpit will present a properly themed look&feel and a set of extensions known to work properly
 with ALP. Some additional extensions will be available as separate packages.
 * A fully containerized version of YaST will be offered as an alternative for those cases in which
