@@ -65,7 +65,7 @@ a transactional and a non-transactional ALP system.
 
 We don't expect Cockpit to work flawlessly on this first prototype. In particular, we are concerned
 about some areas like proper management of configurations that are split over several files at
-`/usr/etc`, `/etc`, etc.
+`/usr/etc` and `/etc`.
 
 The commitment of the current group to maintain Cockpit beyond the first ALP prototype is subject to
 the condition of getting valuable feedback from that prototype. There is no way to evolve the
