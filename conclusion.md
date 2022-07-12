@@ -21,7 +21,7 @@ containers).
 The plan of this work group is to stay working as a group and take the responsibility of delivering
 a functional Cockpit and a useful containerized YaST for the ALP prototype in September.
 
-Since the scope of this first protype is limited, some use-cases may not be covered. That includes
+Since the scope of this first prototype is limited, some use-cases may not be covered. That includes
 most of the traditional usages of openSUSE Leap.
 
 ### Plans for Cockpit
