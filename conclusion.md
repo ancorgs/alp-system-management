@@ -92,7 +92,7 @@ YaST will offer quite some functionality for September's prototype included (but
 * Bootloader installation and tweaking
 * Firewall configuration
 * Management of system services
-* Advanced kdump and fadumb administration
+* Advanced kdump and fadump administration
 * Configuration of iSCSI devices (iSCSI LIO target)
 * Inspection of the systemd journal
 * Management of users and groups
