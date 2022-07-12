@@ -57,8 +57,8 @@ And last but not least, we also aim to offer a way to manage software updates th
 the September's prototype. But it will work in completely different ways depending on whether the
 system is transactional or not. In the first case, the `cockpit-tukit` package should be installed
 and used. For non-transactional system `cockpit-packagekit` should be used. We don't plan to
-introduce any mechanism to handle that automatically, the user should install the right package
-based on its use-case.
+introduce any new mechanism to handle that automatically, so it may happen that the user would need
+to install the right package based on its use-case.
 
 In that regard, we plan to offer some short documentation on how to install and run Cockpit in both
 a transactional and a non-transactional ALP system.
