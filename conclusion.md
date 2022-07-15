@@ -97,8 +97,6 @@ YaST will offer quite some functionality for September's prototype included (but
 * Inspection of the systemd journal
 * Management of users and groups
 * Configuration of timezone, keyboard layout and language (if available in ALP)
-* Printers configuration
-* Administration of DNS server
 
 Apart from that, YaST will offer full capabilities for configuring the network in systems using
 Wicked (if that is possible in ALP).
