@@ -3,7 +3,7 @@
 ## Software Installation
 
 There are situations in which Cockpit or the containerized version of YaST would need to install
-software in the system being managed.
+software in the managed system.
 
 In the case of Cockpit this only happens in the "Metrics" section, where it can offer the option to
 install and configure `cockpit-pcp` (and its dependencies) or `redis`. It's specially visible in the
