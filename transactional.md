@@ -2,6 +2,8 @@
 
 ## Software Installation
 
+### Current Status in Cockpit and YaST
+
 There are situations in which Cockpit or the containerized version of YaST would need to install
 software in the managed system.
 
@@ -40,7 +42,7 @@ the installation of the package by itself.
 
 ![YaST in a transactional system](img/yast-dns-server-transactional.png)
 
-All this leaves some open questions:
+### Open Questions
 
 - Is the current approach of both Cockpit and containerized YaST enough?
 
@@ -51,7 +53,23 @@ All this leaves some open questions:
   support for transactional systems? Or maybe some new layer that works with PackageKit and/or tukit
   depending on the case?
 
+### Point of View of the ALP Steering Committee
+
+Jiri Srain and Frederic Crozat feel that just mentioning the missing packages may not be enough.
+It would be better if Cockpit and YaST would offer a relatively guided way to install the packages
+and reboot.
+
+That procedure may not help in those scenarios that are fully image-based (in which installing
+packages is pointless because they will go away with next image deployment/update). But it's fine to
+ignore those scenarios for now, since they are likely out of scope of 1:1 management systems in
+general.
+
+Regarding the question about what should be the right layer to implement package installation, it
+is NOT expected from PackageKit to get transactional-update support anytime soon.
+
 ## Management of dependencies
+
+### Current Status in Cockpit and YaST
 
 Related to the previous section about software installation, it's worth noticing that there is a
 kind of philosophical difference in the way both containerized YaST and Cockpit approach to package
@@ -72,8 +90,14 @@ The only exception to the usual Cockpit approach of not displaying any clue in t
 uninstalled functionality is the explicit mention to `cockpit-pcp` already exposed in the previous
 section of this document.
 
-Open question:
+### Open Question
 
 - Should the containerized YaST, when running in a transactional system, adopt an approach closer to
   the Cockpit one and only display the modules that can be fully used without installing additional
   software into the system?
+
+### Point of View of the ALP Steering Committee
+
+Jiri Srain said: "_I would not judge whether all functionality is available with currently installed
+packages, but on a per-plugin basis decide whether it can be used for majority of common scenarios
+and then offer it even if not all functionality is available._"
