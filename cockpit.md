@@ -301,6 +301,12 @@ page](https://confluence.suse.com/pages/viewpage.action?spaceKey=LEONG&title=ALP
  - no machine type choice
  - no BIOS legacy / UEFI choice
  - add virtio devices is not yet possible ? (only passthrough seems to be available)
+ - only local management is possible, qemu:///system is hardcoded
+ - no connector choice (like ssh)
+ - state of libvirt daemon check is only a local testing ?
+ - hardcoded to qemu-system-x86_64
+ - qcow2 format only
+ - VM storage is very limited
 
 One of the good things about `virt-manager` is that it doesn't need to be installed in the same
 machine hosting the virtual machines. Actually, an installation of `virt-manager` can be configured
